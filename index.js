@@ -9,6 +9,6 @@ function nowServing(katzDeliLine){
     return "The line is currently empty."
   }
   katzDeliLine.shift();
-  return "Currently serving ${first}." + ;
+  return "Currently serving " + first + ".";
 
 }
