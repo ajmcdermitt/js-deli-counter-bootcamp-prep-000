@@ -5,7 +5,7 @@ function takeANumber(katzDeliLine, name){
 
 function nowServing(katzDeliLine){
   var first = katzDeliLine[0];
-  if (first === ""){
+  if (first === "" or first == null){
     return "The line is currently empty."
   }
   katzDeliLine.shift();
