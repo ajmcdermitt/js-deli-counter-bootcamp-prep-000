@@ -3,6 +3,9 @@ function takeANumber(katzDeliLine, name){
   return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line.";
 }
 
-function nowServing(){
-  return "test"
+function nowServing(katzDeliLine){
+  var first = katzDeliLine[0];
+  katzDeliLine.shift();
+  return first;
+
 }
