@@ -19,7 +19,11 @@ function currentLine(katzDeliLine){
 
   for(var i = 0; i <= length; i++){
     var current = i + 1;
-    line += " " + current + ". " + katzDeliLine[i];
+    if (i == 0){
+      line += " " + current + ". " + katzDeliLine[i];
+    }else{
+      line += ", " + current + ". " + katzDeliLine[i];
+    }
   }
   return line;
 }
